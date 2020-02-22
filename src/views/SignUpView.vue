@@ -1,14 +1,14 @@
 <template>
   <div class="corpo">
-      <sign-in/>
+      <sign-up/>
   </div>
 </template>
 
 <script>
-import SignIn from "../components/sign_in/SignIn"
+import SignUp from "../components/sign_in/SignUp"
 export default {
     components:{
-        SignIn,
+        SignUp,
     }
 }
 </script>
