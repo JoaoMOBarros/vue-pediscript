@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-.flex{
+.flex {
     display: flex;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.sign-in-container{
+.corpo {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.sign-in-container {
     box-sizing: border-box;
-    width: 60%;
-    min-width: 750px;
-    max-width: 850px;
-    margin: auto;
+    width: 750px;
     height: 480px;
     box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
     border-radius: 10px;
@@ -26,21 +32,22 @@
     padding-bottom: 50px;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #ffffff;
 }
 
-.side-information-sign-in{
+.side-information-sign-in {
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.side-information-sign-in img{
+.side-information-sign-in img {
     height: 200px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.side-information-sign-in h1{
+.side-information-sign-in h1 {
     font-family: "Quicksand", sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -48,7 +55,7 @@
     margin-top: 10px;
 }
 
-.side-information-sign-in h2{
+.side-information-sign-in h2 {
     font-family: "Quicksand", sans-serif;
     text-align: center;
     font-size: 16px;
@@ -56,13 +63,13 @@
     margin-bottom: 10px;
 }
 
-.credentials-sign-in{
+.credentials-sign-in {
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.credentials-sign-in h1{
+.credentials-sign-in h1 {
     font-family: "Quicksand", sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -70,25 +77,25 @@
     margin-top: 10px;
 }
 
-.credentials-sign-in h3{
+.credentials-sign-in h3 {
     font-family: "Quicksand", sans-serif;
     font-size: 12px;
     font-weight: 500;
-    padding-top: 20px ;
+    padding-top: 20px;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.sing-in-redirection{
+.sing-in-redirection {
     width: 60%;
     justify-content: space-evenly;
 }
 
-.sing-in-redirection span{
+.sing-in-redirection span {
     color: #439dbb;
 }
 
-.credentials-sign-in .sign-in-input-email{
+.credentials-sign-in .sign-in-input-email {
     box-sizing: content-box;
     font-family: "Quicksand", sans-serif;
     width: 60%;
@@ -99,7 +106,7 @@
     padding: 0 10px 0 10px;
 }
 
-.credentials-sign-in .sign-in-input-password{
+.credentials-sign-in .sign-in-input-password {
     box-sizing: content-box;
     font-family: "Quicksand", sans-serif;
     width: 60%;
@@ -111,7 +118,7 @@
     padding: 0 10px 0 10px;
 }
 
-.btn-solid-blue{
+.btn-solid-blue {
     box-sizing: content-box;
     padding: 10px 50px 10px 50px;
     font-family: "Quicksand", sans-serif;
@@ -121,10 +128,9 @@
     border: 0px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
-    
 }
 
-.btn-outlined-blue{
+.btn-outlined-blue {
     box-sizing: content-box;
     padding: 10px 20px 10px 20px;
     font-family: "Quicksand", sans-serif;
