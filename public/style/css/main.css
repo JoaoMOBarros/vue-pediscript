@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container{
+    box-sizing: border-box;
+    width: 60%;
+    min-width: 750px;
+    max-width: 850px;
+    margin: auto;
+    height: 480px;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.side-information-sign-in{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.side-information-sign-in img{
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.side-information-sign-in h1{
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.side-information-sign-in h2{
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.credentials-sign-in{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.credentials-sign-in h1{
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.credentials-sign-in h3{
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 20px ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sing-in-redirection{
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.sing-in-redirection span{
+    color: #439dbb;
+}
+
+.credentials-sign-in .sign-in-input-email{
+    box-sizing: content-box;
+    font-family: "Quicksand", sans-serif;
+    width: 60%;
+    height: 40px;
+    border: 1px solid #439dbb;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.credentials-sign-in .sign-in-input-password{
+    box-sizing: content-box;
+    font-family: "Quicksand", sans-serif;
+    width: 60%;
+    height: 40px;
+    border: 1px solid #439dbb;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.btn-solid-blue{
+    box-sizing: content-box;
+    padding: 10px 50px 10px 50px;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #439dbb;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+    
+}
+
+.btn-outlined-blue{
+    box-sizing: content-box;
+    padding: 10px 20px 10px 20px;
+    font-family: "Quicksand", sans-serif;
+    color: #439dbb;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 1px solid #439dbb;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+}
