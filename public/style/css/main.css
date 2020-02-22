@@ -49,6 +49,7 @@
 
 .side-information-sign-in h1 {
     font-family: "Quicksand", sans-serif;
+    text-align: center;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -84,6 +85,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .sing-in-redirection {
@@ -140,4 +142,144 @@
     border: 1px solid #439dbb;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+}
+
+/*************************
+******SIGN UP FORMS*******
+**************************/
+
+.sign-up-form-container{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: auto;
+    width: 400px;
+    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.sign-up-form-container h1 {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sign-up-form-container h2 {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sign-up-form-container .input-text-field{
+    box-sizing: content-box;
+    font-family: "Quicksand", sans-serif;
+    width: 85%;
+    height: 40px;
+    border: 1px solid #439dbb;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sign-up-form-container .input-text-field span{
+    color: aqua;
+}
+
+/****************************
+***********SELECT BOX********
+*****************************/
+
+/* Customize the label (the container) */
+
+.container-check {
+    display: block;
+    width: 90%;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* Hide the browser's default checkbox */
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-check span.link {
+    color: #439dbb;
+    font-weight: 500;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container-check:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container-check input:checked~.checkmark {
+    background-color: #439dbb;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container-check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container-check .checkmark:after {
+    left: 6px;
+    top: 4px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
