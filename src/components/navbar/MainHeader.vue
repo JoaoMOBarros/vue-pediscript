@@ -33,7 +33,7 @@
           <a href="#">Neuro/Card/Resp</a>
           <ul>
             <li>
-              <a href="#">Neuro</a>
+              <a href="#">Neurology</a>
               <ul>
                 <li v-for="neuro in neuros" :key="neuro">
                   <a href>{{neuro}}</a>
@@ -41,7 +41,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">Card</a>
+              <a href="#">Cardiology</a>
               <ul>
                 <li v-for="cardio in cardios" :key="cardio">
                   <a href>{{cardio}}</a>
@@ -49,7 +49,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">Resp</a>
+              <a href="#">Respiratory</a>
               <ul>
                 <li v-for="resp in resps" :key="resp">
                   <a href>{{resp}}</a>
@@ -62,7 +62,7 @@
           <a href="#">GI/GU/Endo</a>
           <ul>
             <li>
-              <a href="#">GI</a>
+              <a href="#">Gastroenterology</a>
               <ul>
                 <li v-for="gi in gis" :key="gi">
                   <a href>{{gi}}</a>
@@ -70,7 +70,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">GU</a>
+              <a href="#">Genitourinary/ Renal</a>
               <ul>
                 <li v-for="gu in gus" :key="gu">
                   <a href>{{gu}}</a>
@@ -78,7 +78,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">Endo</a>
+              <a href="#">Endocrinology</a>
               <ul>
                 <li v-for="endo in endos" :key="endo">
                   <a href>{{endo}}</a>
@@ -91,7 +91,7 @@
           <a href="#">HO/ID/Rheum</a>
           <ul>
             <li>
-              <a href>HO</a>
+              <a href>Hematology/Oncology</a>
               <ul>
                 <li v-for="ho in hos" :key="ho">
                   <a href>{{ho}}</a>
@@ -99,7 +99,7 @@
               </ul>
             </li>
             <li>
-              <a href>ID</a>
+              <a href>Infectious Disease</a>
               <ul>
                 <li v-for="id in ids" :key="id">
                   <a href>{{id}}</a>
@@ -107,7 +107,7 @@
               </ul>
             </li>
             <li>
-              <a href>Rheum</a>
+              <a href>Rheumatology</a>
               <ul>
                 <li v-for="rheum in rheums" :key="rheum">
                   <a href>{{rheum}}</a>
@@ -117,33 +117,49 @@
           </ul>
         </li>
         <li>
-          <a href="#">HO/ID/Rheum</a>
+          <a href="#"> Derm/EENT/MSK/Surg</a>
           <ul>
             <li>
-              <a href>HO</a>
+              <a href>Dermatology</a>
               <ul>
-                <li v-for="ho in hos" :key="ho">
-                  <a href>{{ho}}</a>
+                <li v-for="derm in derms" :key="derm">
+                  <a href>{{derm}}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href>ID</a>
+              <a href>EENT</a>
               <ul>
-                <li v-for="id in ids" :key="id">
-                  <a href>{{id}}</a>
+                <li v-for="eent in eents" :key="eent">
+                  <a href>{{eent}}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href>Rheum</a>
+              <a href>Trauma & Musculoskeletal </a>
               <ul>
-                <li v-for="rheum in rheums" :key="rheum">
-                  <a href>{{rheum}}</a>
+                <li v-for="msk in msks" :key="msk">
+                  <a href>{{msk}}</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href>Surgical Referrals</a>
+              <ul>
+                <li v-for="surg in surgs" :key="surg">
+                  <a href>{{surg}}</a>
                 </li>
               </ul>
             </li>
           </ul>
+        </li>
+        <li>
+            <a href="">Psych</a>
+            <ul>
+                 <li v-for="psych in psychs" :key="psych">
+                  <a href>{{psych}}</a>
+                </li>
+            </ul>
         </li>
       </ul>
     </div>
@@ -159,7 +175,7 @@ export default {
         "Neuro Adol",
         "Neuro ED",
         "Neuro HM",
-        "Neuro NIGU",
+        "Neuro NICU",
         "Neuro PICU"
       ],
       cardios: [
@@ -167,7 +183,7 @@ export default {
         "Cardio Adol",
         "Cardio ED",
         "Cardio HM",
-        "Cardio NIGU",
+        "Cardio NICU",
         "Cardio PICU"
       ],
       resps: [
@@ -175,15 +191,20 @@ export default {
         "Resp Adol",
         "Resp ED",
         "Resp HM",
-        "Resp NIGU",
+        "Resp NICU",
         "Resp PICU"
       ],
-      gis: ["GI PC", "GI Adol", "GI ED", "GI HM", "GI NIGU"],
+      gis: ["GI PC", "GI Adol", "GI ED", "GI HM", "GI NICU"],
       gus: ["GU PC", "Female GU Adol", "Male GU Adol", "GU ED", "GU HM"],
       endos: ["Endo PC", "Endo Adol", "Endo ED", "Endo HM"],
       hos: ["Heme Onc PC", "Heme Onc Adol", "Heme Onc ED", "Heme Onc HM"],
-      ids: ["ID PC", "Acute Illness Adol", "ID ED", "ID HM", "ID NIGU"],
-      rheums: ["Rheum PC", "Rheum Adol", "Rheum HM"]
+      ids: ["ID PC", "Acute Illness Adol", "ID ED", "ID HM", "ID NICU"],
+      rheums: ["Rheum PC", "Rheum Adol", "Rheum HM"],
+      derms: ["Derm PC", "Derm Adol", "Derm ED", "Derm HM", "Derm NICU"],
+      eents:["EENT PC", "EENT Adol","EENT ED","EENT HM", "Ophoto PC", "Ophoto Adol", "Oral PC", "Oral Adol"],
+      msks:["MSK PC", "MSK Adol", "MSK ED", "MSK HM"],
+      surgs:["Surg PC", "Surg HM", "Post Op PICU"],
+      psychs:["Psych PC","Adol PC", "Dev PC", "Psych ED", "Psych HM"]
     };
   }
 };
