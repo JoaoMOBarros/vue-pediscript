@@ -148,7 +148,7 @@
 ******SIGN UP FORMS*******
 **************************/
 
-.sign-up-form-container{
+.sign-up-form-container {
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
@@ -178,7 +178,7 @@
     margin-bottom: 30px;
 }
 
-.sign-up-form-container .input-text-field{
+.sign-up-form-container .input-text-field {
     box-sizing: content-box;
     font-family: "Quicksand", sans-serif;
     width: 85%;
@@ -189,7 +189,7 @@
     margin-top: 10px;
 }
 
-.sign-up-form-container .input-text-field span{
+.sign-up-form-container .input-text-field span {
     color: aqua;
 }
 
@@ -282,4 +282,217 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+/***********************
+******HEADER************
+************************/
+
+header {
+    height: 50px;
+    background-color: white;
+    border-bottom: 0.8px solid #cecece !important;
+    width: 100vw;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo-text {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo-container .logo-text {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.logo-container {
+    width: 25vw;
+    align-items: center;
+}
+
+.logo-container p {
+    font-size: 15px;
+}
+
+.logo-container #logo-img {
+    height: 28px;
+    margin-right: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav.menu-container {
+    width: 45vw;
+}
+
+nav.menu-container li.menu-item {
+    width: 80px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(41, 40, 40);
+    cursor: pointer;
+    transition: border 0.4s;
+}
+
+nav.menu-container li.menu-item:hover {
+    border-bottom: 1.5px solid #439dbb;
+}
+
+nav.menu-container li:nth-child(2) {
+    margin: 0 35px;
+}
+
+nav.menu-container li:nth-child(3) {
+    margin: 0 35px 0 0;
+}
+
+nav.menu-container ul {
+    padding-top: 14px;
+}
+
+.search-container {
+    width: 15vw;
+    align-items: center;
+}
+
+.search-container .input-search {
+    width: calc(20vw - 40px);
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border: 1px solid #439dbb;
+}
+
+.search-container .input-search::placeholder {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.search-container img.input-img {
+    height: 12px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.profile-container {
+    width: 15vw;
+    font-family: "Quicksand", sans-serif;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.profile-container .profile-img {
+    height: 38px;
+    width: 38px;
+    object-fit: cover;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: right;
+}
+
+.profile-container .profile-txt {
+    font-size: 14px;
+}
+
+.profile-container .sign-out-txt {
+    font-size: 12px;
+    color: #439dbb;
+}
+
+/**********************************
+*************DROP MENU*************
+***********************************/
+.second-navbar{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+
+.second-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #439dbb;
+}
+
+.second-navbar ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #439dbb;
+}
+
+.second-navbar li ul {
+    display: none;
+}
+
+.second-navbar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.second-navbar ul li a:hover {
+    background: #439dbb;
+}
+
+.second-navbar li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+.second-navbar li:hover li {
+    float: none;
+}
+
+.second-navbar li:hover a {
+    background: #439dbb;
+}
+
+.second-navbar li:hover li a:hover {
+    background: #217896;
+}
+
+.second-navbar .main-navigation li ul li {
+    border-top: 0;
+}
+
+.second-navbar ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+
+  .second-navbar ul:before,
+  .second-navbar ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  .second-navbar ul:after { clear: both; }
+
+/***************************
+  ********SECOND NAVBAR*******
+  ***************************/
+
+.second-navbar {
+    margin-top: 50px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 0.8px solid #cecece !important;
+    width: 100vw;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
