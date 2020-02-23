@@ -297,7 +297,14 @@ header {
     z-index: 0;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;}
+
+header .left-space{
+    width: 10vw;
+}
+
+header .right-space{
+    width: 10vw;
 }
 
 header .logo-text {
@@ -310,7 +317,7 @@ header .logo-text {
 }
 
 .logo-container {
-    width: 25vw;
+    width: 15vw;
     align-items: center;
 }
 
@@ -320,13 +327,13 @@ header .logo-text {
 
 .logo-container #logo-img {
     height: 28px;
-    margin-right: 10px;
-    margin-left: 50px;
+    padding-right: 10px;
     cursor: pointer;
 }
 
 nav.menu-container {
     width: 45vw;
+    justify-content: center;
 }
 
 nav.menu-container li.menu-item {
@@ -357,12 +364,12 @@ nav.menu-container ul {
 }
 
 .search-container {
-    width: 15vw;
+    width: 10vw;
     align-items: center;
 }
 
 .search-container .input-search {
-    width: calc(20vw - 40px);
+    width: 90%;
     height: 25px;
     padding-left: 10px;
     padding-right: 30px;
@@ -382,7 +389,7 @@ nav.menu-container ul {
 }
 
 .profile-container {
-    width: 15vw;
+    width: 10vw;
     font-family: "Quicksand", sans-serif;
     align-items: center;
     padding-right: 20px;
@@ -420,7 +427,7 @@ nav.menu-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #439dbb;
+    background-color: #439dbb;
 }
 
 .second-navbar ul li {
@@ -463,6 +470,12 @@ nav.menu-container ul {
     background: #217896;
 }
 
+.main-navigation{
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .second-navbar .main-navigation li ul li {
     border-top: 0;
 }
@@ -496,3 +509,5 @@ nav.menu-container ul {
     left: 0;
     right: 0;
 }
+
+
