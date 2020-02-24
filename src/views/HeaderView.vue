@@ -7,7 +7,7 @@ import MainHeader from "../components/navbar/Header"
 export default {
     components:{
         MainHeader,
-    }
+    },
 }
 </script>
 

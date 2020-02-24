@@ -11,7 +11,7 @@
         <ul class="flex">
           <li class="menu-item">New Template</li>
           <li class="menu-item">Recently Views</li>
-          <li class="menu-item">Template Library</li>
+          <li @click="goToTemplateLibrary()" class="menu-item">Template Library</li>
           <li class="menu-item">About</li>
         </ul>
       </nav>
@@ -247,6 +247,11 @@
 
 <script>
 export default {
+  methods:{
+      goToTemplateLibrary(){
+        this.$router.push("/content-table");
+      }
+    },
   data() {
     return {
       neuros: [
