@@ -6,6 +6,7 @@
         <img id="logo-img" src="../../assets/images/logo.png" alt="logo-img" />
         <p class="logo-text">Pediscripts</p>
       </div>
+      <div class="menu-container-empty"></div>
       <nav class="menu-container flex">
         <ul class="flex">
           <li class="menu-item">New Template</li>
@@ -25,6 +26,17 @@
           <p class="profile-txt">Usuario</p>
           <p class="sign-out-txt">Sign Out</p>
         </div>
+      </div>
+      <div class="dropdown-menu-sandwich flex">
+        <ul class="main-navigation flex">
+          <li><img src="../../assets/images/hamb-menu.png" alt="">
+          <ul>
+            <li v-for="content in contents" :key="content">
+              <a href="">{{content}}</a>
+              </li>
+          </ul>
+          </li>
+        </ul>
       </div>
       <div class="right-space"></div>
     </header>
@@ -384,6 +396,22 @@ export default {
         "Neurology NICU",
         "GI PICU",
         "ID PICU"
+      ],
+      contents:[
+        "Neurology",
+        "Cardiology",
+        "Dermatology",
+        "Respiratory",
+        "Gastroenterology",
+        "Genitourinary/ Renal",
+        "Endocrinology",
+        "Hematology/Oncology",
+        "Infectious Disease",
+        "Rheumatology",
+        "EENT",
+        "Trauma & Musculoskeletal",
+        "Surgical Referrals",
+        "Psychs"
       ]
     };
   }

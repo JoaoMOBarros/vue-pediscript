@@ -297,14 +297,7 @@ header {
     z-index: 0;
     top: 0;
     left: 0;
-    right: 0;}
-
-header .left-space{
-    width: 10vw;
-}
-
-header .right-space{
-    width: 10vw;
+    right: 0;
 }
 
 header .logo-text {
@@ -415,87 +408,194 @@ nav.menu-container ul {
     color: #439dbb;
 }
 
-/**********************************
-*************DROP MENU*************
-***********************************/
-.second-navbar{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-}
-
-.second-navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #439dbb;
-}
-
-.second-navbar ul li {
-    display: block;
-    position: relative;
-    float: left;
-    background: #439dbb;
-}
-
-.second-navbar li ul {
-    display: none;
-}
-
-.second-navbar ul li a {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    white-space: nowrap;
-    color: #fff;
-}
-
-.second-navbar ul li a:hover {
-    background: #439dbb;
-}
-
-.second-navbar li:hover>ul {
-    display: block;
-    position: absolute;
-}
-
-.second-navbar li:hover li {
-    float: none;
-}
-
-.second-navbar li:hover a {
-    background: #439dbb;
-}
-
-.second-navbar li:hover li a:hover {
-    background: #217896;
-}
-
-.main-navigation{
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.second-navbar .main-navigation li ul li {
-    border-top: 0;
-}
-
-.second-navbar ul ul ul {
-    left: 100%;
-    top: 0;
-  }
-
-  .second-navbar ul:before,
-  .second-navbar ul:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
-  
-  .second-navbar ul:after { clear: both; }
-
 /***************************
   ********SECOND NAVBAR*******
   ***************************/
+
+@media screen and (max-width: 940px) {
+    header .left-space {
+        width: 5vw;
+    }
+    header .right-space {
+        width: 5vw;
+    }
+    .second-navbar {
+        display: none;
+    }
+    .search-container {
+        display: none;
+    }
+    .menu-container {
+        width: 55vw !important;
+    }
+    .dropdown-menu-sandwich {
+        width: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+    #sandwich-menu {
+        height: 40px;
+    }
+    .dropdown-menu-sandwich img {
+        height: 40px;
+    }
+    /***************************
+******WHITE DROP DOWN*******
+****************************/
+    .dropdown-menu-sandwich {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13px;
+    }
+    .dropdown-menu-sandwich ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+    }
+    .dropdown-menu-sandwich ul li {
+        display: block;
+        position: relative;
+        float: left;
+        background: #ffffff;
+    }
+    .dropdown-menu-sandwich li ul {
+        display: none;
+    }
+    .dropdown-menu-sandwich ul li a {
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #439dbb;
+    }
+    .dropdown-menu-sandwich ul li a:hover {
+        background: #ffffff;
+    }
+    .dropdown-menu-sandwich li:hover>ul {
+        display: block;
+        position: absolute;
+    }
+    .dropdown-menu-sandwich li:hover li {
+        float: none;
+    }
+    .dropdown-menu-sandwich li:hover a {
+        background: #ffffff;
+    }
+    .dropdown-menu-sandwich li:hover li a:hover {
+        background: #eeeeee;
+    }
+    .main-navigation {
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dropdown-menu-sandwich .main-navigation li ul li {
+        border-top: 0;
+    }
+    .dropdown-menu-sandwich ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+    .dropdown-menu-sandwich ul:before, .dropdown-menu-sandwich ul:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    .dropdown-menu-sandwich ul:after {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 941px) {
+    header .left-space {
+        width: 10vw;
+    }
+    header .right-space {
+        width: 10vw;
+    }
+    .dropdown-menu-sandwich {
+        display: none;
+    }
+    /**********************************
+    *************DROP MENU*************
+    ***********************************/
+    .second-navbar {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13px;
+    }
+    .second-navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #439dbb;
+    }
+    .second-navbar ul li {
+        display: block;
+        position: relative;
+        float: left;
+        background: #439dbb;
+    }
+    .second-navbar li ul {
+        display: none;
+    }
+    .second-navbar ul li a {
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #fff;
+    }
+    .second-navbar ul li a:hover {
+        background: #439dbb;
+    }
+    .second-navbar li:hover>ul {
+        display: block;
+        position: absolute;
+    }
+    .second-navbar li:hover li {
+        float: none;
+    }
+    .second-navbar li:hover a {
+        background: #439dbb;
+    }
+    .second-navbar li:hover li a:hover {
+        background: #217896;
+    }
+    .main-navigation {
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .second-navbar .main-navigation li ul li {
+        border-top: 0;
+    }
+    .second-navbar ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+    .second-navbar ul:before, .second-navbar ul:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    .second-navbar ul:after {
+        clear: both;
+    }
+}
+
+@media screen and (max-width:800px){
+    .menu-container{
+        display: none;
+    }
+    .menu-container-empty{
+        width: 35vw ;
+    }
+    .profile-container{
+        width: 20vw;
+    }
+}
 
 .second-navbar {
     margin-top: 50px;
@@ -509,5 +609,3 @@ nav.menu-container ul {
     left: 0;
     right: 0;
 }
-
-
