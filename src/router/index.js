@@ -4,10 +4,16 @@ import SignUp from '../views/SignUpView.vue'
 import SignUpForm from '../views/SignUpFormView.vue'
 import SignIn from '../views/SignInView.vue'
 import Header from '../views/HeaderView.vue'
+import ContentTable from '../views/ContentTableView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/content-table',
+    name: 'ContentTable',
+    component: ContentTable
+  },
   {
     path: '/header',
     name: 'Header',
@@ -28,6 +34,7 @@ const routes = [
     name: 'SignUp',
     component: SignUp
   },
+  
 ]
 
 const router = new VueRouter({
