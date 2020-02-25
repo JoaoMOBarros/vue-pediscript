@@ -5,6 +5,7 @@ import SignUpForm from '../views/SignUpFormView.vue'
 import SignIn from '../views/SignInView.vue'
 import Header from '../views/HeaderView.vue'
 import ContentTable from '../views/ContentTableView.vue'
+import Footer from '../views/FooterView.vue'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,11 @@ const routes = [
     path: '/content-table',
     name: 'ContentTable',
     component: ContentTable
+  },
+  {
+    path: '/footer',
+    name: 'Footer',
+    component: Footer
   },
   {
     path: '/header',

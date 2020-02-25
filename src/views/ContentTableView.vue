@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex-column">
     <main-header/>
     <content-table/>
   </div>
@@ -11,7 +11,7 @@ import MainHeader from "../components/navbar/Header"
 export default {
     components:{
         ContentTable,
-        MainHeader
+        MainHeader,
     }
 }
 </script>
