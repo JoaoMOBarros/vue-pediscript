@@ -6,6 +6,7 @@ import SignIn from '../views/SignInView.vue'
 import Header from '../views/HeaderView.vue'
 import ContentTable from '../views/ContentTableView.vue'
 import Footer from '../views/FooterView.vue'
+import Results from '../views/ResultsView.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/sign-in',
     name: 'SignIn',
     component: SignIn
+  },
+  {
+    path: '/results',
+    name: 'Results',
+    component: Results
   },
   {
     path: '/sign-up-form',

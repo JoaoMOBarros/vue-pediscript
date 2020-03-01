@@ -382,21 +382,11 @@ nav.menu-container ul {
 }
 
 .profile-container {
-    width: 10vw;
+    width: 15vw;
     font-family: "Quicksand", sans-serif;
     align-items: center;
     padding-right: 20px;
     justify-content: flex-end;
-}
-
-.profile-container .profile-img {
-    height: 38px;
-    width: 38px;
-    object-fit: cover;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    text-align: right;
 }
 
 .profile-container .profile-txt {
@@ -406,6 +396,106 @@ nav.menu-container ul {
 .profile-container .sign-out-txt {
     font-size: 12px;
     color: #439dbb;
+}
+
+/*******************************
+***********DROPDOWN*************
+********************************/
+
+.dropdown-menu-sandwich {
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#sandwich-menu {
+    height: 40px;
+}
+
+.dropdown-menu-sandwich img {
+    height: 40px;
+}
+
+/***************************
+******WHITE DROP DOWN*******
+****************************/
+
+.dropdown-menu-sandwich {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+
+.dropdown-menu-sandwich ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.dropdown-menu-sandwich ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #ffffff;
+}
+
+.dropdown-menu-sandwich li ul {
+    display: none;
+}
+
+.dropdown-menu-sandwich ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #439dbb;
+}
+
+.dropdown-menu-sandwich ul li a:hover {
+    background: #ffffff;
+}
+
+.dropdown-menu-sandwich li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+.dropdown-menu-sandwich li:hover li {
+    float: none;
+}
+
+.dropdown-menu-sandwich li:hover a {
+    background: #ffffff;
+}
+
+.dropdown-menu-sandwich li:hover li a:hover {
+    background: #eeeeee;
+}
+
+.main-navigation {
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-menu-sandwich .main-navigation li ul li {
+    border-top: 0;
+}
+
+.dropdown-menu-sandwich ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.dropdown-menu-sandwich ul:before, .dropdown-menu-sandwich ul:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.dropdown-menu-sandwich ul:after {
+    clear: both;
 }
 
 /***************************
@@ -428,83 +518,6 @@ nav.menu-container ul {
     .menu-container {
         width: 55vw !important;
     }
-    .dropdown-menu-sandwich {
-        width: 10vw;
-        align-items: center;
-        justify-content: center;
-    }
-    #sandwich-menu {
-        height: 40px;
-    }
-    .dropdown-menu-sandwich img {
-        height: 40px;
-    }
-    /***************************
-******WHITE DROP DOWN*******
-****************************/
-    .dropdown-menu-sandwich {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 13px;
-    }
-    .dropdown-menu-sandwich ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #ffffff;
-    }
-    .dropdown-menu-sandwich ul li {
-        display: block;
-        position: relative;
-        float: left;
-        background: #ffffff;
-    }
-    .dropdown-menu-sandwich li ul {
-        display: none;
-    }
-    .dropdown-menu-sandwich ul li a {
-        display: block;
-        padding: 1em;
-        text-decoration: none;
-        white-space: nowrap;
-        color: #439dbb;
-    }
-    .dropdown-menu-sandwich ul li a:hover {
-        background: #ffffff;
-    }
-    .dropdown-menu-sandwich li:hover>ul {
-        display: block;
-        position: absolute;
-    }
-    .dropdown-menu-sandwich li:hover li {
-        float: none;
-    }
-    .dropdown-menu-sandwich li:hover a {
-        background: #ffffff;
-    }
-    .dropdown-menu-sandwich li:hover li a:hover {
-        background: #eeeeee;
-    }
-    .main-navigation {
-        height: 50px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .dropdown-menu-sandwich .main-navigation li ul li {
-        border-top: 0;
-    }
-    .dropdown-menu-sandwich ul ul ul {
-        left: 100%;
-        top: 0;
-    }
-    .dropdown-menu-sandwich ul:before, .dropdown-menu-sandwich ul:after {
-        content: " ";
-        /* 1 */
-        display: table;
-        /* 2 */
-    }
-    .dropdown-menu-sandwich ul:after {
-        clear: both;
-    }
 }
 
 @media screen and (min-width: 941px) {
@@ -515,7 +528,7 @@ nav.menu-container ul {
         width: 10vw;
     }
     .dropdown-menu-sandwich {
-        display: none;
+        display: block;
     }
     /**********************************
     *************DROP MENU*************
@@ -585,14 +598,14 @@ nav.menu-container ul {
     }
 }
 
-@media screen and (max-width:800px){
-    .menu-container{
+@media screen and (max-width:800px) {
+    .menu-container {
         display: none;
     }
-    .menu-container-empty{
-        width: 35vw ;
+    .menu-container-empty {
+        width: 35vw;
     }
-    .profile-container{
+    .profile-container {
         width: 20vw;
     }
 }
@@ -614,7 +627,7 @@ nav.menu-container ul {
 ********CONTENT TABLE********
 ****************************/
 
-.content-table-container{
+.content-table-container {
     flex: 1 0 auto;
     margin-top: 120px;
     box-sizing: border-box;
@@ -625,7 +638,7 @@ nav.menu-container ul {
     margin-bottom: 50px;
     box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
     border-radius: 10px;
-    padding-top: 40px ;
+    padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -633,7 +646,7 @@ nav.menu-container ul {
     justify-content: center;
 }
 
-.content-table-container .content-table-item{
+.content-table-container .content-table-item {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
@@ -649,7 +662,7 @@ nav.menu-container ul {
     font-weight: 500;
 }
 
-.content-table-container .content-table-item:hover{
+.content-table-container .content-table-item:hover {
     background-color: #217896;
     width: 260px;
     font-weight: 700;
@@ -660,7 +673,7 @@ nav.menu-container ul {
 ***********FOOTER**************
 *******************************/
 
-.footer-container{
+.footer-container {
     flex-shrink: 0;
     box-sizing: border-box;
     width: 100vw;
@@ -671,12 +684,148 @@ nav.menu-container ul {
     align-items: center;
 }
 
-.footer-container h1{
+.footer-container h1 {
     font-size: 13px;
     color: #b4b4b4;
     font-family: 'Quicksand', sans-serif;
 }
 
-.ext-page-container{
+.ext-page-container {
     justify-content: space-between;
+}
+
+/*************************
+***** SEARCH RESULTS *****
+**************************/
+
+.results-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 40px;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+}
+
+.results-container .results-template {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+}
+
+.results-container .results-template .results-title {
+    height: 36px;
+    background-color: #439dbb;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+}
+
+.results-container .results-template h1 {
+    padding-left: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.results-container .results-template h2 {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.results-container .results-template p {
+    color: #504f4f;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+}
+
+.results-container .results-template p.tag{
+    padding-left: 10px;
+    font-weight: 600;
+    color: #439dbb;
+}
+
+.results-container .results-template .results-body {
+    padding: 20px;
+}
+
+.results-container .results-template .results-body .template-content {
+    /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  width: 97%;
+  line-height: 20px;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 80px; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.results-container .results-template .results-body .template-content:before{
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;  
+}
+
+.results-container .results-template .results-body .template-content:after{
+    /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+.results-page .tags-container{
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-right: auto;
+    height: 326px;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+}
+
+.results-page .tags-container p{
+    color: #504f4f;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.results-page .tags-container .input-text-field{
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #439dbb;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
