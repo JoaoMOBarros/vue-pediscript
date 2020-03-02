@@ -1,9 +1,12 @@
 <template>
   <div class="corpo flex-column">
     <div class="content-table-page flex-column">
-      <div class="content-table-container flex wrap">
-        <div class="content-table-item flex" v-for="content in contents" :key="content">
-          <h1>{{content}}</h1>
+      <div class="content-table-container flex-column">
+        <h1 class="title">Template Library</h1>
+        <div class="content-table-box flex wrap">
+          <div class="content-table-item flex" v-for="content in contents" :key="content">
+            <h1>{{content}}</h1>
+          </div>
         </div>
       </div>
     </div>
