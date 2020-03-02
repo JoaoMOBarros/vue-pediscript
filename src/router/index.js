@@ -7,6 +7,7 @@ import Header from '../views/HeaderView.vue'
 import ContentTable from '../views/ContentTableView.vue'
 import Footer from '../views/FooterView.vue'
 import Results from '../views/ResultsView.vue'
+import Template from '../views/TemplateView.vue'
 import Home from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
@@ -41,6 +42,11 @@ const routes = [
     path: '/results',
     name: 'Results',
     component: Results
+  },
+  {
+    path: '/template',
+    name: 'Template',
+    component: Template
   },
   {
     path: '/sign-up-form',

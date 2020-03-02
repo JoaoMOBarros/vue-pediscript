@@ -13,7 +13,7 @@
           <img src="../../assets/images/search.png" class="input-img" />
         </div>
         <p>Didn't find what you need?</p>
-        <p class="table-link">Try the table of contents</p>
+        <p class="table-link">Try the template library</p>
       </div>
     </div>
     <footer>

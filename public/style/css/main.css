@@ -911,3 +911,77 @@ header .logo-text {
     left: 82px;
     height: 18px;
 }
+
+/**************************************
+**********TEMPLATE PAGE ***************
+**************************************/
+
+.template-container{
+    box-sizing: border-box;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+}
+
+.template-container .template-header{
+    background-color: #439dbb;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    padding-right: 30px;
+}
+
+.template-container .template-header h1{
+    padding-left: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size:26px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.template-container .template-header .btn{
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.4);
+    background-color: #ffffff;
+    color: #439dbb;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.template-container .template-header .btn img{
+    height: 16px;
+    padding-right: 5px;
+}
+
+#template-edit-btn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.template-container .template-body{
+    padding:20px 0;
+    text-align: justify;
+}
+
+.template-container .template-body h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    padding: 6px 0 6px 20px;
+    width: 120px;
+    border-radius: 0 10px 10px 0;
+    background-color: #439dbb;
+    color: #ffffff;
+}
+
+.template-container .template-body p{
+    padding: 20px 30px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
