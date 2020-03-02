@@ -7,7 +7,15 @@
         <p class="logo-text">Pediscripts</p>
       </div>
       <div class="search-container flex">
-        </div>
+        <input
+          type="text"
+          id="header-search-bar"
+          class="input-search"
+          placeholder="Search any template you need..."
+        />
+        <div class="search-block"></div>
+        <img src="../../assets/images/search.png" class="input-img" />
+      </div>
       <div class="profile-container flex">
         <div class="flex">
             <div class="user-info-container flex-column">

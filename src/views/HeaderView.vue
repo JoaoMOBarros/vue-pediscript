@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import MainHeader from "../components/navbar/Header"
+import MainHeader from "../components/navbar/SearchHeader"
 export default {
     components:{
         MainHeader,
