@@ -7,7 +7,7 @@
 
 <script>
 import ContentTable from '../components/content_table/ContentTable'
-import MainHeader from "../components/navbar/Header"
+import MainHeader from "../components/navbar/SearchHeader"
 export default {
     components:{
         ContentTable,

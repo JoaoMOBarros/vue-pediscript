@@ -7,10 +7,16 @@ import Header from '../views/HeaderView.vue'
 import ContentTable from '../views/ContentTableView.vue'
 import Footer from '../views/FooterView.vue'
 import Results from '../views/ResultsView.vue'
+import Home from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/',
+    name:'Home',
+    component: Home
+  },
   {
     path: '/content-table',
     name: 'ContentTable',
@@ -42,7 +48,7 @@ const routes = [
     component: SignUpForm
   },
   {
-    path: '/',
+    path: '/sign-up',
     name: 'SignUp',
     component: SignUp
   },
