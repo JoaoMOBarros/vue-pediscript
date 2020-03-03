@@ -9,6 +9,7 @@ import Footer from '../views/FooterView.vue'
 import Results from '../views/ResultsView.vue'
 import Template from '../views/TemplateView.vue'
 import Home from '../views/HomeView.vue'
+import Favorites from '../views/MyFavoritesView.vue'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const routes = [
     name: 'SignUp',
     component: SignUp
   },
+  {
+    path:'/my-favorites',
+    name: 'Favorites',
+    component: Favorites
+  }
   
 ]
 
