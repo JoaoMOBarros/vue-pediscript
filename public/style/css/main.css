@@ -1198,7 +1198,6 @@ header .logo-text {
 }
 
 .edit-page .edit-container{
-    margin-top: 100px;
     box-sizing: border-box;
     max-width: 600px;
     min-width: 400px;
@@ -1278,4 +1277,82 @@ header .logo-text {
 
 .edit-page .edit-container .btn-container .btn-solid-blue{
     margin-left: 20px;
+    padding: 10px 20px;
+}
+
+.edit-search-container{
+    box-sizing: border-box;
+    max-width: 600px;
+    min-width: 400px;
+    height: auto;
+    padding: 100px 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-search-container h1{
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 35px;
+}
+
+.edit-search-container h2{
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: #747474;
+    margin-bottom: 35px;
+}
+
+.edit-search-container p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: #747474;
+    margin-bottom: 15px;
+}
+
+.edit-search-container p.table-link{
+    color: #439dbb;
+    font-weight: 600;
+}
+
+.edit-search-container .search-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.edit-search-container .search-box input{
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    width: 80%;
+    height: 36px;
+    border: 1px solid #439dbb;
+    padding: 0 10px 0 50px;
+    border-radius:36px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-search-container .search-box .search-block{
+    position: absolute;
+    background-color: #439dbb;
+    height: 36px;
+    width: 36px;
+    border-radius: 36px 0 0 36px;
+    top: 5px;
+    left: 45px;
+}
+
+.edit-search-container .search-box img{
+    position: absolute;
+    top: 14px;
+    left: 57px;
+    height: 18px;
+}
+
+.edit-page .space-between{
+    width: 80px;
 }

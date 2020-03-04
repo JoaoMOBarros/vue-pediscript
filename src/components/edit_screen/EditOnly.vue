@@ -1,6 +1,21 @@
 <template>
-  <div class="corpo">
-    <div class="edit-page flex-column">
+  <div class="corpo flex-column">
+    <div class="edit-page flex">
+      <div class="edit-search-container flex-column">
+        <h1>Need help to start?</h1>
+        <h2>
+          Search and start from one of our templates. <br/> <br/>Some examples include: adolescent neuro, emergency hyperglycemia,
+          nephrotic syndrome, pelvic osteotomy, etc.
+        </h2>
+        <div class="search-box">
+          <input type="text" placeholder="Find any template you need" />
+          <div class="search-block"></div>
+          <img src="../../assets/images/search.png" class="input-img" />
+        </div>
+      </div>
+
+      <div class="space-between"></div>
+
       <div class="edit-container flex-column">
         <div class="row flex-column">
           <h1>Title*</h1>
@@ -64,7 +79,17 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="footer-container flex">
+        <h1>Pediscripts © 2020 - All Right Reserved</h1>
+        <div class="footer-pages flex">
+          <h1>Content Library</h1>
+          <h1>About</h1>
+          <h1>Terms of Use</h1>
+          <h1>Contact Us</h1>
+        </div>
+        </div>
+    </footer>
   </div>
 </template>
 
