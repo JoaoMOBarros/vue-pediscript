@@ -2,7 +2,7 @@
   <div class="top-page">
     <header class="flex">
       <div class="left-space"></div>
-      <div class="logo-container flex">
+      <div @click="goToHome()" class="logo-container flex">
         <img id="logo-img" src="../../assets/images/logo.png" alt="logo-img" />
         <p class="logo-text">Pediscripts</p>
       </div>
@@ -28,10 +28,10 @@
                 <img src="../../assets/images/arrow.png" alt="">
                 <ul>
                   <li>
-                    <a href>My Templates</a>
+                    <a @click="goToTemplates()">My Templates</a>
                   </li>
                   <li>
-                    <a href>My Favorites</a>
+                    <a @click="goToFavorites()">My Favorites</a>
                   </li>
                   <li>
                     <a href>Settings</a>
@@ -53,8 +53,14 @@
 <script>
 export default {
   methods: {
-    goToTemplateLibrary() {
-      this.$router.push("/content-table");
+    goToHome() {
+      this.$router.push("/");
+    },
+    goToFavorites(){
+      this.$router.push("/my-favorites")
+    },
+    goToTemplates(){
+      this.$router.push('/my-templates')
     }
   },
   data() {

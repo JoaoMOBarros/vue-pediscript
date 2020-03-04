@@ -24,12 +24,18 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <footer-custom />
+    </footer>
   </div>
 </template>
 
 <script>
+import FooterCustom from "../footer/Footer";
 export default {
+  components: {
+    FooterCustom
+  },
   data() {
     return {
       templateInfo: {

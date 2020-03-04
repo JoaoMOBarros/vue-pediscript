@@ -312,6 +312,7 @@ header .logo-text {
 .logo-container {
     width: 15vw;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo-container p {
@@ -445,6 +446,7 @@ header .logo-text {
     text-decoration: none;
     white-space: nowrap;
     color: #439dbb;
+    cursor: pointer;
 }
 
 .dropdown-menu-sandwich ul li a:hover {
@@ -691,6 +693,7 @@ header .logo-text {
     font-size: 13px;
     color: #b4b4b4;
     font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
 }
 
 .footer-container .footer-pages h1{
@@ -808,6 +811,7 @@ header .logo-text {
   background: white;
 }
 
+
 .results-page .tags-container{
     box-sizing: border-box;
     margin-top: 100px;
@@ -881,6 +885,7 @@ header .logo-text {
 .home-container p.table-link{
     color: #439dbb;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .home-container .search-box{
@@ -1355,4 +1360,75 @@ header .logo-text {
 
 .edit-page .space-between{
     width: 80px;
+}
+
+.edit-template-container{
+    box-sizing: border-box;
+    max-width: 600px;
+    min-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
+    margin-bottom: 50px;
+}
+
+.edit-template-container .edit-template-header{
+    background-color: #439dbb;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    padding-right: 30px;
+}
+
+.edit-template-container .edit-template-header h1{
+    padding-left: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size:26px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.edit-template-container .edit-template-header .btn{
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.4);
+    background-color: #ffffff;
+    color: #439dbb;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.edit-template-container .edit-template-header .btn img{
+    height: 16px;
+    padding-right: 5px;
+}
+
+#edit-template-fav-btn{
+    margin-right: 20px;
+}
+
+
+.edit-template-container .edit-template-body{
+    padding:20px 0;
+    text-align: justify;
+}
+
+.edit-template-container .edit-template-body h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    padding: 6px 0 6px 20px;
+    width: 120px;
+    border-radius: 0 10px 10px 0;
+    background-color: #439dbb;
+    color: #ffffff;
+}
+
+.edit-template-container .edit-template-body p{
+    padding: 20px 30px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
 }

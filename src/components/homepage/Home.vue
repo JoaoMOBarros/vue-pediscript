@@ -13,19 +13,27 @@
           <img src="../../assets/images/search.png" class="input-img" />
         </div>
         <p>Didn't find what you need?</p>
-        <p class="table-link">Try the template library</p>
+        <p @click="goToTemplateLibrary()" class="table-link">Try the template library</p>
       </div>
     </div>
     <footer>
-      <div class="footer-container flex">
-        <h1>Pediscripts © 2020</h1>
-      </div>
+      <footer-custom />
     </footer>
   </div>
 </template>
 
 <script>
-export default {};
+import FooterCustom from "../footer/Footer";
+export default {
+  components: {
+    FooterCustom
+  },
+  methods:{
+    goToTemplateLibrary(){
+      this.push.$router("/template-library")
+    }
+  }
+};
 </script>
 
 <style>

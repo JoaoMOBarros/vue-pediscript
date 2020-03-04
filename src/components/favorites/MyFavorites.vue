@@ -31,15 +31,17 @@
       </div>
     </div>
     <footer>
-      <div class="footer-container flex">
-        <h1>Pediscripts © 2020</h1>
-      </div>
+      <footer-custom />
     </footer>
   </div>
 </template>
 
 <script>
+import FooterCustom from "../footer/Footer";
 export default {
+  components: {
+    FooterCustom
+  },
   data() {
     return {
       userInfo: {

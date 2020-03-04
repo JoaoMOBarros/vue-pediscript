@@ -4,14 +4,15 @@ import SignUp from '../views/SignUpView.vue'
 import SignUpForm from '../views/SignUpFormView.vue'
 import SignIn from '../views/SignInView.vue'
 import Header from '../views/HeaderView.vue'
-import ContentTable from '../views/ContentTableView.vue'
+import TemplateLibrary from '../views/TemplateLibraryView.vue'
 import Footer from '../views/FooterView.vue'
 import Results from '../views/ResultsView.vue'
 import Template from '../views/TemplateView.vue'
 import Home from '../views/HomeView.vue'
 import Favorites from '../views/MyFavoritesView.vue'
 import MyTemplates from '../views/MyTemplatesView.vue'
-import EditOnly from '../views/EditOnlyView.vue'
+import NewTemplate from '../views/EditOnlyView.vue'
+import EditTemplate from '../views/EditWithResultsView.vue'
 
 Vue.use(VueRouter)
 
@@ -22,9 +23,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/content-table',
-    name: 'ContentTable',
-    component: ContentTable
+    path: '/template-library',
+    name: 'TemplateLibrary',
+    component: TemplateLibrary
   },
   {
     path: '/footer',
@@ -72,9 +73,14 @@ const routes = [
     component: MyTemplates
   },
   {
-    path:'/edit-only',
-    name: 'EditOnly',
-    component: EditOnly
+    path:'/new-template',
+    name: 'NewTemplate',
+    component: NewTemplate
+  },
+  {
+    path:'/edit-template',
+    name: 'EditTemplate',
+    component: EditTemplate
   }
   
 ]
