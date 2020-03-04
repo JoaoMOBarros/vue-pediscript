@@ -1050,6 +1050,7 @@ header .logo-text {
     margin-right: 5px;
 }
 
+
 .favorites-container .favorites-template h1 {
     padding-left: 20px;
     color: #fff;
@@ -1152,4 +1153,30 @@ header .logo-text {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+/*******************************
+*********My Templates***********
+*******************************/
+
+.favorites-container .favorites-template .favorites-title .edit-box{
+    position: absolute;
+    right: 30px;
+    align-items: center;
+}
+
+.favorites-container .favorites-template .favorites-title .edit-box img{
+    height: 12px;
+    margin-right: 5px;
+}
+
+.favorites-container .favorites-template .favorites-title .exclude-box{
+    position: absolute;
+    right: 80px;
+    align-items: center;
+}
+
+.favorites-container .favorites-template .favorites-title .exclude-box img{
+    height: 12px;
+    margin-right: 5px;
 }

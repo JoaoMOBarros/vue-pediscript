@@ -10,6 +10,7 @@ import Results from '../views/ResultsView.vue'
 import Template from '../views/TemplateView.vue'
 import Home from '../views/HomeView.vue'
 import Favorites from '../views/MyFavoritesView.vue'
+import MyTemplates from '../views/MyTemplatesView.vue'
 
 Vue.use(VueRouter)
 
@@ -63,6 +64,11 @@ const routes = [
     path:'/my-favorites',
     name: 'Favorites',
     component: Favorites
+  },
+  {
+    path:'/my-templates',
+    name: 'MyTemplates',
+    component: MyTemplates
   }
   
 ]
