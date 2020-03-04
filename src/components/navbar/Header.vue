@@ -29,7 +29,7 @@
                     <a href>Settings</a>
                   </li>
                   <li>
-                    <a href>Sign Out</a>
+                    <a @click="goToSignIn()">Sign Out</a>
                   </li>
                 </ul>
               </li>
@@ -53,7 +53,11 @@ export default {
     },
     goToTemplates(){
       this.$router.push('/my-templates')
+    },
+    goToSignIn(){
+      this.$router.push("/sign-in")
     }
+
   },
   data() {
     return {

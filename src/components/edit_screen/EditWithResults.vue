@@ -1,31 +1,29 @@
 <template>
   <div class="corpo flex-column">
     <div class="edit-page flex">
-      <div class="flex-column">
-        <div class="edit-template-container flex-column">
-          <div class="edit-template-header flex">
-            <h1>{{templateInfo.name}}</h1>
-            <div class="btn-group flex">
-              <div id="edit-template-fav-btn" class="btn flex">
-                <img src="../../assets/images/tack.png" alt />
-                Pin
-              </div>
-              <div id="edit-template-copy-btn " class="btn flex">
-                <img src="../../assets/images/copy.png" alt />
-                Copy
-              </div>
+      <div class="edit-template-container flex-column">
+        <div class="edit-template-header flex">
+          <h1>{{templateInfo.name}}</h1>
+          <div class="btn-group flex">
+            <div id="edit-template-copy-btn " class="btn flex">
+              <img src="../../assets/images/copy.png" alt />
+              Copy
+            </div>
+            <div id="edit-template-pin-btn" class="btn flex">
+              <img src="../../assets/images/tack.png" alt />
+              Pin
             </div>
           </div>
-          <div class="edit-template-body">
-            <h2>Categories</h2>
-            <p>{{templateInfo.organ_system}}, {{templateInfo.cheif_complaint}}, {{templateInfo.age}}, {{templateInfo.clinical_venue}}, {{templateInfo.section}}</p>
-            <h2>Description</h2>
-            <p>{{templateInfo.text}}</p>
-          </div>
+        </div>
+        <div class="edit-template-body">
+          <h2>Categories</h2>
+          <p>{{templateInfo.organ_system}}, {{templateInfo.cheif_complaint}}, {{templateInfo.age}}, {{templateInfo.clinical_venue}}, {{templateInfo.section}}</p>
+          <h2>Description</h2>
+          <p>{{templateInfo.text}}</p>
         </div>
       </div>
 
-      <div class="space-between"></div>
+      <div class="empty-space"></div>
 
       <div class="edit-container flex-column">
         <div class="row flex-column">

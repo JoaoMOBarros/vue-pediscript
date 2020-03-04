@@ -8,7 +8,7 @@
           nephrotic syndrome, pelvic osteotomy, etc.
         </h2>
         <div class="search-box">
-          <input type="text" placeholder="Find any template you need" />
+          <input  @click="goToResults()" type="text" placeholder="Find any template you need" />
           <div class="search-block"></div>
           <img src="../../assets/images/search.png" class="input-img" />
         </div>
@@ -30,7 +30,10 @@ export default {
   },
   methods:{
     goToTemplateLibrary(){
-      this.push.$router("/template-library")
+      this.$router.push("/template-library");
+    },
+    goToResults(){
+      this.$router.push("/results");
     }
   }
 };

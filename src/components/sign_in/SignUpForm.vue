@@ -18,13 +18,18 @@
         <input type="checkbox" />
         <span class="checkmark"></span>
       </label>
-      <button class="btn-solid-blue">Save & Complete</button>
+      <button @click="goToHome()" class="btn-solid-blue">Save & Complete</button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  methods:{
+    goToHome(){
+      this.$router.push("/")
+    }
+  },
   data() {
     return {
       user_types: ["MD", "Resident", "Medical Student", "NP", "PA", "Other"]

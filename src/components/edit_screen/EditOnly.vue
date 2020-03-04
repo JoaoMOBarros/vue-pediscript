@@ -80,21 +80,18 @@
       </div>
     </div>
     <footer>
-        <div class="footer-container flex">
-        <h1>Pediscripts © 2020 - All Right Reserved</h1>
-        <div class="footer-pages flex">
-          <h1>Content Library</h1>
-          <h1>About</h1>
-          <h1>Terms of Use</h1>
-          <h1>Contact Us</h1>
-        </div>
-        </div>
+        <footer-custom/>
     </footer>
   </div>
 </template>
 
 <script>
-export default {};
+import FooterCustom from "../footer/Footer";
+export default {
+  components: {
+    FooterCustom
+  }
+};
 </script>
 
 <style>

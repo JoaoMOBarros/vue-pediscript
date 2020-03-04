@@ -1,6 +1,6 @@
 <template>
   <div class="corpo flex-column">
-    <div class="template-page flex-column">
+    <div class="content">
       <div class="template-container flex-column">
         <div class="template-header flex">
           <h1>{{templateInfo.name}}</h1>
@@ -8,7 +8,7 @@
             <div id="template-fav-btn" class="btn flex">
                 <img src="../../assets/images/star.png" alt="">
                 Favorite</div>
-            <div id="template-edit-btn" class="btn flex">
+            <div @click="goToEditTemplate()"  id="template-edit-btn" class="btn flex">
                 <img src="../../assets/images/edit.png" alt="">
                 Edit</div>
             <div id="template-copy-btn " class="btn flex">
@@ -35,6 +35,11 @@ import FooterCustom from "../footer/Footer";
 export default {
   components: {
     FooterCustom
+  },
+  methods:{
+    goToEditTemplate(){
+      this.$router.push("/edit-template");
+    }
   },
   data() {
     return {

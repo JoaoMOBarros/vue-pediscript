@@ -78,6 +78,7 @@
     margin-top: 10px;
 }
 
+
 .credentials-sign-in h3 {
     font-family: "Quicksand", sans-serif;
     font-size: 12px;
@@ -88,13 +89,14 @@
     margin-top: 20px;
 }
 
-.sing-in-redirection {
+.sign-in-redirection {
     width: 60%;
     justify-content: space-evenly;
 }
 
-.sing-in-redirection span {
+.sign-in-redirection span {
     color: #439dbb;
+    cursor: pointer;
 }
 
 .credentials-sign-in .sign-in-input-email {
@@ -120,6 +122,7 @@
     padding: 0 10px 0 10px;
 }
 
+
 .btn-solid-blue {
     box-sizing: content-box;
     padding: 10px 50px 10px 50px;
@@ -130,6 +133,7 @@
     border: 0px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+    cursor: pointer;
 }
 
 .btn-outlined-blue {
@@ -142,6 +146,7 @@
     border: 1px solid #439dbb;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(80, 80, 80, 0.4);
+    cursor: pointer;
 }
 
 /*************************
@@ -678,6 +683,7 @@ header .logo-text {
 *******************************/
 
 .footer-container {
+    margin-top: 50px;
     flex-shrink: 0;
     box-sizing: border-box;
     width: 100vw;
@@ -697,6 +703,7 @@ header .logo-text {
 }
 
 .footer-container .footer-pages h1{
+    font-family: 'Quicksand', sans-serif;
     margin-left: 50px;
     font-weight: 600;
 }
@@ -708,6 +715,9 @@ header .logo-text {
 /*************************
 ***** SEARCH RESULTS *****
 **************************/
+.templete-page{
+    flex: 1 0 auto;
+}
 
 .results-container {
     box-sizing: border-box;
@@ -723,6 +733,7 @@ header .logo-text {
 
 .results-container .results-template {
     box-sizing: border-box;
+    cursor: pointer;
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
@@ -811,6 +822,10 @@ header .logo-text {
   background: white;
 }
 
+.results-page{
+    flex: 1 0 auto;
+    justify-content: center;
+}
 
 .results-page .tags-container{
     box-sizing: border-box;
@@ -840,6 +855,10 @@ header .logo-text {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.results-page .empty-space{
+    width: 100px;
 }
 
 .home-page{
@@ -883,6 +902,9 @@ header .logo-text {
 }
 
 .home-container p.table-link{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
     color: #439dbb;
     font-weight: 600;
     cursor: pointer;
@@ -928,7 +950,9 @@ header .logo-text {
 **************************************/
 
 .template-container{
+    margin-top: 100px;
     box-sizing: border-box;
+    margin-bottom: auto;
     width: 800px;
     height: auto;
     border-radius: 10px;
@@ -972,6 +996,7 @@ header .logo-text {
 #template-edit-btn{
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 
@@ -1197,15 +1222,17 @@ header .logo-text {
 *********************************/
 
 .edit-page{
+    box-sizing: border-box;
     flex: 1 0 auto;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .edit-page .edit-container{
     box-sizing: border-box;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 500px;
+    margin-top: 100px;
+    margin-bottom: auto;
     width: 50%;
     height: auto;
     box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
@@ -1215,7 +1242,7 @@ header .logo-text {
 
 .edit-page .edit-container h1{
     font-family: "Quicksand", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #504f4f;
     margin-bottom: 8px;
@@ -1235,7 +1262,7 @@ header .logo-text {
 
 .edit-page .edit-container .row  input{
     box-sizing: border-box;
-    height: 30px;
+    height: 25px;
     border: 1px solid #439dbb;
     padding: 0 10px 0 10px;
     border-radius: 5px;
@@ -1243,7 +1270,7 @@ header .logo-text {
 }
 .edit-page .edit-container .row select{
     box-sizing: border-box;
-    height: 30px;
+    height: 25px;
     border: 1px solid #439dbb;
     padding: 0 10px 0 10px;
     border-radius: 5px;
@@ -1362,14 +1389,23 @@ header .logo-text {
     width: 80px;
 }
 
+.content{
+    margin-bottom: auto;
+}
+
+.edit-results{
+    margin-top: 100px;
+}
+
 .edit-template-container{
+    margin-top: 100px;
     box-sizing: border-box;
+    margin-bottom: auto;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 500px;
     height: auto;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(80, 80, 80, 0.4);
-    margin-bottom: 50px;
 }
 
 .edit-template-container .edit-template-header{
@@ -1406,10 +1442,6 @@ header .logo-text {
     padding-right: 5px;
 }
 
-#edit-template-fav-btn{
-    margin-right: 20px;
-}
-
 
 .edit-template-container .edit-template-body{
     padding:20px 0;
@@ -1431,4 +1463,10 @@ header .logo-text {
     padding: 20px 30px;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
+}
+#edit-template-pin-btn{
+    margin-left: 10px;
+}
+.edit-page .empty-space{
+    width: 50px;
 }

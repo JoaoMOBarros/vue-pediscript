@@ -5,8 +5,8 @@
                 <h1>Welcome back</h1>
                 <input type="text" class="sign-in-input-email" placeholder="Email">
                 <input type="password" class="sign-in-input-password" placeholder="Password">
-                <button class="btn-solid-blue">Sign Up</button>
-                <div class="sing-in-redirection flex">
+                <button class="btn-solid-blue">Sign In</button>
+                <div @click="goToSignUp()" class="sign-in-redirection flex">
                     <h3>New to PediScripts <span>Sign up</span></h3>
                 </div>
             </div>
@@ -21,6 +21,11 @@
 
 <script>
 export default {
+    methods:{
+        goToSignUp(){
+            this.$router.push("/sign-up");
+        }
+    }
 
 }
 </script>
