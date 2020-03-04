@@ -684,12 +684,18 @@ header .logo-text {
     height: 40px;
     background-color: #424242;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer-container h1 {
     font-size: 13px;
     color: #b4b4b4;
     font-family: 'Quicksand', sans-serif;
+}
+
+.footer-container .footer-pages h1{
+    margin-left: 50px;
+    font-weight: 600;
 }
 
 .ext-page-container {
