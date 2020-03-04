@@ -11,6 +11,7 @@ import Template from '../views/TemplateView.vue'
 import Home from '../views/HomeView.vue'
 import Favorites from '../views/MyFavoritesView.vue'
 import MyTemplates from '../views/MyTemplatesView.vue'
+import EditOnly from '../views/EditOnlyView.vue'
 
 Vue.use(VueRouter)
 
@@ -69,6 +70,11 @@ const routes = [
     path:'/my-templates',
     name: 'MyTemplates',
     component: MyTemplates
+  },
+  {
+    path:'/edit-only',
+    name: 'EditOnly',
+    component: EditOnly
   }
   
 ]
